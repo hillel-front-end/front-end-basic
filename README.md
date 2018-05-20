@@ -11,7 +11,7 @@
 
 3) выполнить команду 
  
-    `git clone https://github.com/ValeriyHillel/Front-end-Basic.git`
+    `git clone https://github.com/hillel-front-end/front-end-basic.git`
 
 4) перейти в папку проекта
 
