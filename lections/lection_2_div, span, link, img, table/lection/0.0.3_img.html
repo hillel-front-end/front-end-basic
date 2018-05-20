@@ -1,0 +1,82 @@
+﻿﻿<!--
+С помощью тега <img> можно разместить изображение на вашей странице.
+Элемент имеет следующие атрибуты: src, alt, width, height, align.
+Тег не имеет текстового содержимого и потому является самодостаточным.
+В связи с этим отсутствует закрывающий тег.
+
+*src - source, источник откуда подгружается изображение.
+    Источник может быть как локальний дистрибутив, так и какой либо источник в сети.
+    Форматы которые используются в верстке:
+        .jpg
+        .gif
+        .png
+*Alt - это атрибут, который указывает альтернативный текст, который выведется если изображение не подгрузится.
+
+*width/height - aтрибуты контролируют размеры изображения.
+                Если один из них отсутствует, то изображение растянется пропорционально второму.
+                Если в результате изменения изображения пропорции будут нарушены, то изображение может быть отображено некорректно.
+                По умолчанию изображение принимает свои действительные размеры.
+
+align - aтрибут указывает положение изображение относительно остального контента.
+
+Может принимать следующие значения для вертикального выравнивания изображения:
+    bottom - указывает на выравние изображения по нижней направляющей остального контента ( по умолчанию )
+    middle - указывает на выравние изображения по центральной направляющей остального контента
+    top - указывает на выравние изображения по верхней направляющей остального контента
+
+Не имеет значения где размещено изображение, в начале текста, в середине или в конце.
+Наиболее популярные значения — left и right, создающие обтекание текста вокруг изображения.
+-->
+
+<html>
+
+<head>
+    <title>Тег Img</title>
+</head>
+<body>
+    Изображение из локального ресурса:
+    <img src="./img/cat1.jpg" 
+         alt="CAT-1" 
+         width="500px" 
+         height="100px" 
+         title="ImageExample" />
+
+    <hr /> Изображение из ресурса в сети:
+
+    <img src="http://mblogthumb4.phinf.naver.net/20130410_71/frenchaffair_1365568986852L9lLO_JPEG/rh0.jpg?type=w2" 
+         width="500px" 
+         height="250px" 
+         align="middle" 
+         alt="cat"
+         title="ImageExample" />
+
+    <hr /> Изображение с анимацией:
+
+    <img src="img/hackanm.gif"  
+         width="100px" 
+         align="top" 
+         title="ImageExample" />
+
+    <hr />
+
+    <div>
+        <img src="img/cat1.jpg" width="300px" align="left" alt="cat"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis deserunt earum iure iusto, laboriosam minus modi natus nisi omnis quos, repellendus sit ut. A accusamus architecto
+        id, maiores odit voluptates? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis deserunt earum iure iusto, laboriosam minus modi natus nisi omnis quos, repellendus sit ut. A accusamus architecto id, maiores odit voluptates? Lorem
+        ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis deserunt earum iure iusto, laboriosam minus modi natus nisi omnis quos, repellendus sit ut. A accusamus architecto id, maiores odit voluptates? Lorem ipsum dolor sit amet, consectetur
+        adipisicing elit. Blanditiis deserunt earum iure iusto, laboriosam minus modi natus nisi omnis quos, repellendus sit ut. A accusamus architecto id, maiores odit voluptates? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis deserunt
+        earum iure iusto, laboriosam minus modi natus nisi omnis quos, repellendus sit ut. A accusamus architecto id, maiores odit voluptates? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis deserunt earum iure iusto, laboriosam minus
+        modi natus nisi omnis quos, repellendus sit ut. A accusamus architecto id, maiores odit voluptates? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis deserunt earum iure iusto, laboriosam minus modi natus nisi omnis quos, repellendus
+        sit ut. A accusamus architecto id, maiores odit voluptates? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis deserunt earum iure iusto, laboriosam minus modi natus nisi omnis quos, repellendus sit ut. A accusamus architecto
+        id, maiores odit voluptates? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis deserunt earum iure iusto, laboriosam minus modi natus nisi omnis quos, repellendus sit ut. A accusamus architecto id, maiores odit voluptates? Lorem
+        ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis deserunt earum iure iusto, laboriosam minus modi natus nisi omnis quos, repellendus sit ut. A accusamus architecto id, maiores odit voluptates? Lorem ipsum dolor sit amet, consectetur
+        adipisicing elit. Blanditiis deserunt earum iure iusto, laboriosam minus modi natus nisi omnis quos, repellendus sit ut. A accusamus architecto id, maiores odit voluptates? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis deserunt
+        earum iure iusto, laboriosam minus modi natus nisi omnis quos, repellendus sit ut. A accusamus architecto id, maiores odit voluptates? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis deserunt earum iure iusto, laboriosam minus
+        modi natus nisi omnis quos, repellendus sit ut. A accusamus architecto id, maiores odit voluptates? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis deserunt earum iure iusto, laboriosam minus modi natus nisi omnis quos, repellendus
+        sit ut. A accusamus architecto id, maiores odit voluptates? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis deserunt earum iure iusto, laboriosam minus modi natus nisi omnis quos, repellendus sit ut. A accusamus architecto
+        id, maiores odit voluptates? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis deserunt earum iure iusto, laboriosam minus modi natus nisi omnis quos, repellendus sit ut. A accusamus architecto id, maiores odit voluptates? Lorem
+        ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis deserunt earum iure iusto, laboriosam minus modi natus nisi omnis quos, repellendus sit ut. A accusamus architecto id, maiores odit voluptates? Lorem ipsum dolor sit amet, consectetur
+        adipisicing elit. Blanditiis deserunt earum iure iusto, laboriosam minus modi natus nisi omnis quos, repellendus sit ut. A accusamus architecto id, maiores odit voluptates?
+    </div>
+</body>
+
+</html>
