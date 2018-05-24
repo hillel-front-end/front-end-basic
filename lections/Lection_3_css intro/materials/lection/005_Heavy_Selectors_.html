@@ -1,0 +1,40 @@
+<!--
+Вложенные селекторы
+
+Если необходимо определить стиль для элемента, вложенного в другой, то лучшим решением является конструкция вложенных селекторов.
+
+Первым указывается селектор родительского элемента, а вторым селектор дочернего элемента.
+
+родительский_элемент дочерний_элемент {}
+
+-->
+
+<html>
+<head>
+    <title>Тег style</title>
+    <style type="text/css">
+        .classDiv{
+            color: white;
+            font-size:18px;
+            font-family:Arial;
+            background-color:green;
+        }
+
+        div .classDiv{
+            color: red;
+        }
+
+    </style>
+</head>
+<body>
+    <p class="classDiv">Простой параграф</p>
+
+    <div>
+        <p class="inner"> Содержимое параграфа</p>
+
+        <div class="classDiv">
+            Содержимое вложеного блока
+        </div>
+    </div>
+</body>
+</html>
