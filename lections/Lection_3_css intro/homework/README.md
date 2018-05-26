@@ -22,9 +22,5 @@
   Схематично рассположение элементов друг в друге:
  ![Alt Text](maket_1.png)
 
- * Верстаем:
- ![Alt Text](task_3_part_1.png)
- ![Alt Text](task_3_part_2.png)
+ * Верстаем: https://drive.google.com/drive/folders/10ZE3wDHsfIjuaMnjDC2DZ-grVLYp33ih?usp=sharing
 
- * Не забываем разделять на логические блоки например:
- ![Alt Text](schema.png)
