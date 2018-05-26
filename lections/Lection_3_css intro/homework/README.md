@@ -23,8 +23,8 @@
  ![Alt Text](maket_1.png)
 
  * Верстаем:
-  ![Alt Text](1.png)
-  ![Alt Text](2.png)
+ ![Alt Text](1.png)
+ ![Alt Text](2.png)
 
  * Не забываем разделять на логические блоки например:
-  ![Alt Text](2.png)
+ ![Alt Text](3.png)
