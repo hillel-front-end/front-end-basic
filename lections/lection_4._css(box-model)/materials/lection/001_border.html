@@ -1,0 +1,47 @@
+<!--
+    Универсальное свойство border позволяет одновременно установить толщину, стиль и цвет границы вокруг элемента.
+    Значения могут идти в любом порядке, разделяясь пробелом, браузер сам определит, какое из них соответствует нужному свойству.
+    Для установки границы только на определенных сторонах элемента, воспользуйтесь свойствами border-top,
+    border-bottom, border-left, border-right.
+    (СSS Синтаксис: border: толщина границы, стиль, цвет)
+    Значения стилей:
+        - solid
+        - dashed
+        - dotted
+-->
+<html>
+<head>
+    <title>Border</title>
+    <meta charset="utf-8">
+    <style>
+        .solid-border{
+            border: 5px solid black;
+        }
+
+        .dashed-border{
+            border: 10px dashed red;
+        }
+        
+        .dotted-border{
+            border: 10px dotted green;
+        }
+    </style>
+</head>
+<body>
+    <h2 class="solid-border">
+        Solid border
+    </h2>
+
+    <hr />
+
+    <h2 class="dashed-border">
+        Dashed border
+    </h2>
+
+    <hr/>
+
+    <h2 class="dotted-border">
+        Dotted-border
+    </h2>
+</body>
+</html>

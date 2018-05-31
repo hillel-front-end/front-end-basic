@@ -1,0 +1,41 @@
+﻿<!--
+   Свойство margin отвечает за отступы от всех границ элемента до границ соседних либо родительских элементов.
+   margin-top - наружный отступ сверху.
+   margin-bottom - наружный отступ снизу.
+   margin-left - наружный отступ слева.
+   margin-right - наружный отступ справа.
+
+    margin: 0 auto;  - при этом если дочерни блок меньше родительского блока, то дочерний блок- будет
+   отцентрирован по горизонатали. Для вертикали margin-top,margin-bottom "auto = 0".
+
+
+-->
+<html>
+    <head>
+        <title>Свойство margin</title>
+        <style>
+            .block{
+                width: 30%;
+                border: 1px solid black;
+                text-align: center;
+                padding: 10px;
+            }
+            .indent{
+                /*margin: 10px;*/
+                /*margin-left: 10px;*/
+                /*margin-right: 10px;*/
+                /*margin-top:10px;*/
+                /*margin-bottom: 10px;*/
+                margin: 0 auto;
+            }
+
+        </style>
+    </head>
+    <body>
+        <!--стандартный маргин у html блоков-->
+        <div>
+            <div class="block indent">margin - это внешний отступ блока.</div>
+            <div class="block">margin - это внешний отступ блока.</div>
+        </div>
+    </body>
+</html>
