@@ -1,0 +1,83 @@
+/* --------------- background-color --------------*/
+.bgc-red{
+    background-color: red;
+}
+
+.bgc-green{
+    background-color: green;
+}
+
+.bgc-yellow{
+    background-color: yellow;
+}
+/* --------------- background-color --------------*/
+
+
+/* --------------- background-image --------------*/
+
+.bgi{
+    background-image: url(../img/dog.jpg);
+}
+
+.bgi-2{
+    background-image: url(../img/2.jpg);
+    background-color: blueviolet;
+}
+/* --------------- background-image --------------*/
+
+/* --------------- background-repeat --------------*/
+
+.bgr-x{
+    background-repeat: repeat-x;
+}
+
+.bgr-y{
+    background-repeat: repeat-y;
+}
+
+.bgr-no{
+    background-repeat: no-repeat;
+}
+
+/* --------------- background-repeat --------------*/
+
+/* --------------- background-size --------------*/
+
+.bgs-cover{
+    background-size: cover;
+}
+
+.bgs-contain{
+    background-size: contain;
+}
+/* --------------- background-size --------------*/
+
+
+/* --------------- background-position --------------*/
+
+.bgp-center-center{
+    background-position: center center;
+}
+
+.bgp-right-bottom{
+    background-position: right bottom;
+}
+.bgp-left-center{
+    background-position: left center;
+}
+/* --------------- background-position --------------*/
+
+h3{
+    text-transform: uppercase;
+    margin: 0px;
+}
+
+
+
+
+
+
+
+
+
+

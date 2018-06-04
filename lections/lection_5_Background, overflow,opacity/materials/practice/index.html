@@ -1,0 +1,73 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        html, body{
+            padding: 0px;
+            margin: 0px;
+            height: 100%;
+        }
+
+        .background{
+            height: 100%;
+            background: url("cat.jpg");
+        }
+
+        .opacity{
+            width: 100%;
+            height: 100%;
+            background: black;
+            opacity: 0.9;
+            padding:0.1px;
+        }
+
+        .nav{
+            width: 35%;
+            height: 25%;
+            margin: 18% auto;
+            text-align: center;
+        }
+        .nav ul{
+            margin: 0px;
+            border: 1px solid white;
+            border-radius: 20px;
+            padding: 0px;
+            font-size: 25px;
+            height:100%;
+            /*overflow: auto; возможно добавления сколько хочешь пунктов при фиксированной высоте*/
+        }
+
+        .nav ul li{
+            list-style: none;
+            color: white;
+            text-transform: uppercase;
+            padding: 10px 0px;
+            border-bottom: 1px solid white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="background">
+        <div class="opacity">
+            <div class="nav">
+                <ul>
+                    <li>Главная</li>
+                    <li>Галлерея</li>
+                    <li>Новости</li>
+                    <li>Доставка</li>
+                    <!--<li>Доставка</li>-->
+                    <!--<li>Доставка</li>-->
+                    <!--<li>Доставка</li>-->
+                    <!--<li>Доставка</li>-->
+                    <li style="border-bottom: none;">Контакты</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

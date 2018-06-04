@@ -1,0 +1,125 @@
+<!--
+Для работы с фоном элемента используют такие основные свойства:
+
+*background-color - Определяет цвет фона элемента.
+                    (СSS Синтаксис: background-color: цвет)
+
+*background-image - Устанавливает фоновое изображение для элемента.
+                    Если одновременно для элемента задан цвет фона, он будет показан,
+                    пока фоновая картинка не загрузится полностью.
+                    (СSS Синтаксис: background-image: url(путь к файлу))
+
+*background-repeat - Определяет, как будет повторяться фоновое изображение, установленное с помощью свойства background-image.
+                     Можно установить повторение рисунка только по горизонтали, по вертикали или в обе стороны.
+                     Значения:
+                         repeat    - повторяеться по горизонтали и вертикали
+                         repeat-х  - повторяеться по горизонтали
+                         repeat-у  - повторяеться по вертикали
+                         no-repeat - не повторяется
+                     (СSS Синтаксис: background-repeat: repeat|| repeat-x || repeat-y || no-repeat)
+
+*background-size -  Масштабирует фоновое изображение согласно заданным размерам.
+                    Значения:
+                        Cover -  Изображение будет масштабироваться так,
+                                чтобы заполнить весь контейнер, но если различаются соотношения сторон,
+                                то картинка будет обрезана.
+.
+                        Contain - Масштабирует изображение с сохранением пропорций таким образом,
+                                  чтобы картинка целиком поместилась внутрь блока.
+
+*background-position - Задает начальное положение фонового изображения, установленного с помощью свойства background-image.
+                       Значения:
+                            - по горизонтали[left | center | right ]
+                            - по вертикали [top | center | bottom ]
+                       (СSS Синтаксис: background-position: отступ по горизонтали, отступ по вертикали)
+-->
+
+<html>
+    <head>
+        <title>Background</title>
+        <link rel="stylesheet" href="css/001_background.css">
+        <meta charset="utf-8">
+        <style>
+            .block{
+                display: inline-block;
+                width: 30%;
+                height: 300px;
+                margin-right:20px;
+            }
+        </style>
+    </head>
+    <body>
+
+    <!--<h2>background-color</h2>
+
+    <div class="block-content-color">
+        <div class="block bgc-red"></div>
+        <div class="block bgc-green"></div>
+        <div class="block bgc-yellow"></div>
+    </div>
+
+    <hr/>-->
+
+    <!--<h2>background-image</h2>
+
+    <div class="block-content-img">
+        <div class="block bgc-red bgi"></div>
+        <div class="block bgc-green bgi-2"></div>
+    </div>
+
+    <hr/>-->
+
+    <!--<h2>background-repeat</h2>
+
+    <div class="block-content" style="width: 100%;">
+        <div class="block bgi bgc-red" style="width: 20%;">
+            <h3>Repeat</h3>
+        </div>
+        <div class="block bgi bgr-y bgc-green" style="width: 20%;">
+            <h3>Repeat-y</h3>
+        </div>
+        <div class="block bgi bgr-x bgc-yellow" style="width: 20%;">
+            <h3>Repeat-x</h3>
+        </div>
+        <div class="block bgi bgr-y bgc-yellow" style="width: 20%;">
+            <h3>No-repeat</h3>
+        </div>
+    </div>
+
+    <hr/>-->
+<!--
+    <h2>background-size</h2>
+
+    <div class="block-content">
+        <div class="block bgi bgr-no bgs-cover">
+            <h3>Cover</h3>
+        </div>
+        <div class="block bgi bgr-no bgs-contain">
+            <h3>Contain</h3>
+        </div>
+    </div>
+
+    <hr/>-->
+
+    <h2>background-position</h2>
+
+    <div class="block-content">
+        <div class="block bgc-green">
+            <div class="bgi bgr-no bgp-right-bottom" style="width: 100%; height: 100%;">
+                <h3>background-position: right, bottom;</h3>
+            </div>
+        </div>
+        <div class="block bgc-red">
+            <div class="bgi bgr-no bgp-center-center" style="width: 100%; height: 100%;">
+                <h3>background-position: center, center;</h3>
+            </div>
+        </div>
+        <div class="block bgc-yellow">
+            <div class="bgi bgr-no bgp-left-center" style="width: 100%; height: 100%;">
+                <h3>background-position: left, center;</h3>
+            </div>
+        </div>
+    </div>
+
+    </body>
+</html>

@@ -1,0 +1,126 @@
+<!--
+    Свойство overflow управляет тем, как ведёт себя содержимое блочного элемента, если его размер превышает допустимую длину/ширину.
+    Обычно блок увеличивается в размерах при добавлении в него элементов, заключая в себе всех потомков.
+
+    Если высота/ширина указаны явно,тогда блок не может увеличиться, и содержимое «переполняет» блок.
+    Что может привести к выподания содержимого блока
+    Его отображение в этом случае задаётся свойством overflow.
+
+    Можно указать поведение блока при переполнении по ширине в overflow-x и высоте – в overflow-y.
+
+    Значения:
+        - visible;
+        - hidden;
+        - scroll;
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .block{
+            display: inline-block;
+            vertical-align: top;
+            width: 400px;
+            height: 300px;
+            background:red;
+            border: 5px solid black;
+        }
+
+        img{
+            width: 500px;
+            height: 280px;
+        }
+
+        .visible{
+            overflow: visible;
+        }
+
+        .scroll{
+            overflow: scroll;
+        }
+
+        .hidden{
+            overflow: hidden;
+        }
+
+        .scroll-y{
+            overflow-y: scroll;
+        }
+        
+        .scroll-x{
+            overflow-x: scroll;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="block-content">
+        <h1>
+            Overflow - свойство  управляет тем, как ведёт себя содержимое блочного элемента, если его размер превышает допустимую длину/ширину.
+        </h1>
+
+        <div class="block visible">
+            <h3>Visible</h3>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam blanditiis dolorum eum excepturi fugiat
+            illo libero magnam nemo officiis quam quos rerum saepe, sed, tempore vero voluptas voluptatum. Necessitatibus!
+            illo libero magnam nemo officiis quam quos rerum saepe, sed, tempore vero voluptas voluptatum. Necessitatibus!
+            illo libero magnam nemo officiis quam quos rerum saepe, sed, tempore vero voluptas voluptatum. Necessitatibus!
+            illo libero magnam nemo officiis quam quos rerum saepe, sed, tempore vero voluptas voluptatum. Necessitatibus!
+            illo libero magnam nemo officiis quam quos rerum saepe, sed, tempore vero voluptas voluptatum. Necessitatibus!
+            illo libero magnam nemo officiis quam quos rerum saepe, sed, tempore vero voluptas voluptatum. Necessitatibus!
+            illo libero magnam nemo officiis quam quos rerum saepe, sed, tempore vero voluptas voluptatum. Necessitatibus!
+            illo libero magnam nemo officiis quam quos rerum saepe, sed, tempore vero voluptas voluptatum. Necessitatibus!
+            illo libero magnam nemo officiis quam quos rerum saepe, sed, tempore vero voluptas voluptatum. Necessitatibus!
+        </div>
+
+        <div class="block scroll">
+            <h3>Scroll</h3>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam blanditiis dolorum eum excepturi fugiat
+            illo libero magnam nemo officiis quam quos rerum saepe, sed, tempore vero voluptas voluptatum. Necessitatibus!
+            illo libero magnam nemo officiis quam quos rerum saepe, sed, tempore vero voluptas voluptatum. Necessitatibus!
+            illo libero magnam nemo officiis quam quos rerum saepe, sed, tempore vero voluptas voluptatum. Necessitatibus!
+            illo libero magnam nemo officiis quam quos rerum saepe, sed, tempore vero voluptas voluptatum. Necessitatibus!
+            illo libero magnam nemo officiis quam quos rerum saepe, sed, tempore vero voluptas voluptatum. Necessitatibus!
+            illo libero magnam nemo officiis quam quos rerum saepe, sed, tempore vero voluptas voluptatum. Necessitatibus!
+            illo libero magnam nemo officiis quam quos rerum saepe, sed, tempore vero voluptas voluptatum. Necessitatibus!
+            illo libero magnam nemo officiis quam quos rerum saepe, sed, tempore vero voluptas voluptatum. Necessitatibus!
+            illo libero magnam nemo officiis quam quos rerum saepe, sed, tempore vero voluptas voluptatum. Necessitatibus!
+        </div>
+
+        <div class="block hidden">
+            <h3>Hidden</h3>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam blanditiis dolorum eum excepturi fugiat
+            illo libero magnam nemo officiis quam quos rerum saepe, sed, tempore vero voluptas voluptatum. Necessitatibus!
+            illo libero magnam nemo officiis quam quos rerum saepe, sed, tempore vero voluptas voluptatum. Necessitatibus!
+            illo libero magnam nemo officiis quam quos rerum saepe, sed, tempore vero voluptas voluptatum. Necessitatibus!
+            illo libero magnam nemo officiis quam quos rerum saepe, sed, tempore vero voluptas voluptatum. Necessitatibus!
+            illo libero magnam nemo officiis quam quos rerum saepe, sed, tempore vero voluptas voluptatum. Necessitatibus!
+            illo libero magnam nemo officiis quam quos rerum saepe, sed, tempore vero voluptas voluptatum. Necessitatibus!
+            illo libero magnam nemo officiis quam quos rerum saepe, sed, tempore vero voluptas voluptatum. Necessitatibus!
+            illo libero magnam nemo officiis quam quos rerum saepe, sed, tempore vero voluptas voluptatum. Necessitatibus!
+            illo libero magnam nemo officiis quam quos rerum saepe, sed, tempore vero voluptas voluptatum. Necessitatibus!
+        </div>
+    </div>
+
+    <div class="block-content" style="margin-top: 100px;">
+        <h2>Overflow-x, Overflow-y</h2>
+        <div class="block scroll-x">
+            <img src="img/dog.jpg" alt="dog" />
+        </div>
+        <div class="block scroll-y">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam blanditiis dolorum eum excepturi fugiat
+            illo libero magnam nemo officiis quam quos rerum saepe, sed, tempore vero voluptas voluptatum. Necessitatibus!
+            illo libero magnam nemo officiis quam quos rerum saepe, sed, tempore vero voluptas voluptatum. Necessitatibus!
+            illo libero magnam nemo officiis quam quos rerum saepe, sed, tempore vero voluptas voluptatum. Necessitatibus!
+            illo libero magnam nemo officiis quam quos rerum saepe, sed, tempore vero voluptas voluptatum. Necessitatibus!
+            illo libero magnam nemo officiis quam quos rerum saepe, sed, tempore vero voluptas voluptatum. Necessitatibus!
+            illo libero magnam nemo officiis quam quos rerum saepe, sed, tempore vero voluptas voluptatum. Necessitatibus!
+            illo libero magnam nemo officiis quam quos rerum saepe, sed, tempore vero voluptas voluptatum. Necessitatibus!
+            illo libero magnam nemo officiis quam quos rerum saepe, sed, tempore vero voluptas voluptatum. Necessitatibus!
+            illo libero magnam nemo officiis quam quos rerum saepe, sed, tempore vero voluptas voluptatum. Necessitatibus!
+        </div>
+    </div>
+
+</body>
+</html>
