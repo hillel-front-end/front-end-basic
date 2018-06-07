@@ -1,0 +1,39 @@
+<!--
+    Чтобы отменить действие обтекания, свойство clear надо добавлять к элементу, идущему после элемента с float.
+    Для отмены действия float от вышестоящего элемента применяется свойство clear со следующими значениями:
+        left — отменяет действие значения left у float;
+        right — отменяет действие значения right у float;
+        both — одновременно отменяет действие значений left и right у float. Это значение рекомендуется устанавливать, 
+               когда требуется отменить обтекание элемента, но неизвестно точно с какой стороны.
+-->
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Очистка float</title>
+        <style>
+            .float-element{
+                float: left;
+            }
+
+            .text{
+                font-size: 30px;
+                text-align: left;
+            }
+
+            .clearfix{ 
+                clear: left;
+            }
+        </style>
+    </head>
+    <body>
+        <div style="border:1px solid black;">
+            <img src="cat.jpg" alt="cat-1" class="float-element">
+            <!--<img src="cat.jpg" alt="cat-2" class="float-element clearfix">-->
+            <div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit officia ullam nam voluptatem perspiciatis aut aliquam minima eligendi, fugit incidunt libero maiores tempora quod ducimus corporis ad temporibus esse quam.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit officia ullam nam voluptatem perspiciatis aut aliquam minima eligendi, fugit incidunt libero maiores tempora quod ducimus corporis ad temporibus esse quam.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit officia ullam nam voluptatem perspiciatis aut aliquam minima eligendi, fugit incidunt libero maiores tempora quod ducimus corporis ad temporibus esse quam.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit officia ullam nam voluptatem perspiciatis aut aliquam minima eligendi, fugit incidunt libero maiores tempora quod ducimus corporis ad temporibus esse quam.</div>
+        </div>
+    </body>
+</html>

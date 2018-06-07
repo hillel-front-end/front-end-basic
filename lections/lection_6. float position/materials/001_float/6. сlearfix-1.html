@@ -1,0 +1,37 @@
+<!-- 
+    Очистка float осуществляется при помощи свойство clear - возвращаем на место float елемент.
+    Чтобы parent элемент получил высоту float элемента,
+    обычно вводят универсальный класс, к примеру, clearfix и вставляют пустой <div> с этим классом в конец parent блока.
+-->
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Очистка float</title>
+        <style>
+            .parent{
+                border:1px solid red;
+                padding: 15px 15px 15px 0px;
+            }
+            .float-element{
+                float: left;
+            }
+            .text{
+                font-size: 30px;
+                text-align: left;
+            }
+            h1,h2{
+                font-size: 35px;
+            }
+
+            .clearfix{
+                clear: both;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="parent">
+            <img src="cat.jpg" alt="cat" class="float-element">
+            <div class="clearfix"></div>
+        </div>
+    </body>
+</html>

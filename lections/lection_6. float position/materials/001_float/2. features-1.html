@@ -1,0 +1,45 @@
+<!-- 
+      Элемент с float и со значением left или right превращается в блочный, 
+    к нему автоматически добавляется свойство display со значением block.
+    При этом ширина элемента равна его содержимому плюс значения свойств padding, и border. 
+    В этом отношении элемент ведёт себя как строчно-блочный. 
+
+-->
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+            content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Особенность</title>
+        <style>
+            .frame {
+                float: left;
+                background-color: #887dba;
+                color: #f5faf4; 
+                padding: 10px;
+                margin: 0 10px 10px 10px; 
+            }
+
+            .text{
+                font-size: 20px;
+                margin: 0px 10px;
+            }
+        </style>
+    </head>
+    <body>
+
+        <div class="frame">Lorem ipsum dolor sit amet</div>
+
+        <p class="text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Animi atque consequatur consequuntur dolorum enim repellat, saepe sit voluptatum!
+            Ab aliquam commodi deserunt sint sit! Alias cumque perspiciatis sed sint temporibus!.
+            Ab aliquam commodi deserunt sint sit! Alias cumque perspiciatis sed sint temporibus!.
+            Ab aliquam commodi deserunt sint sit! Alias cumque perspiciatis sed sint temporibus!.            
+            Ab aliquam commodi deserunt sint sit! Alias cumque perspiciatis sed sint temporibus!.
+        </p>
+        
+    </body>
+</html>

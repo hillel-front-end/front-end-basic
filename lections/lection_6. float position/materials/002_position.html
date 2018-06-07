@@ -1,0 +1,99 @@
+<!--
+    position - данное свойство позволяет сдвигать элемент со своего обычного места.
+
+    Значение: static, relative, absolute, fixed.
+
+    Для того, чтобы применить  позиционирование, необходимо указать элементу CSS-свойство position: [значение] и координаты left/right/top/bottom.
+
+
+        - static (Статическое позиционирование производится по умолчанию, 
+                 в том случае, если свойство position не указано).
+        - relative:
+                    Относительное позиционирование сдвигает элемент относительно его обычного положения.
+                    Остальные элементы, располагаются так, как будто этот элемент не сдвигался.
+        - absolute:
+                    Абсолютное позиционирование делает две вещи:
+                        1) Элемент исчезает с того места, где он должен быть и позиционируется заново.
+                            Остальные элементы, располагаются так, как будто этого элемента никогда не было.
+
+                        2)Координаты top/bottom/left/right для нового местоположения отсчитываются от
+                            ближайшего позиционированного родителя, т.е. родителя с позиционированием, 
+                            отличным от static.Если такого родителя нет – то относительно документа.
+
+          - fixed: Позиционирует объект точно так же, как absolute, но относительно окна браузера.
+                   Когда страницу прокручивают, фиксированный элемент остается на своем месте и
+                   не прокручивается вместе со страницей.
+
+-->
+
+<html>
+<head>
+    <title>Position</title>
+    <meta charset="utf-8">
+    <style>
+        .pos-relative{
+            position: relative;
+            top: 30px;
+        }
+
+        .pos-absolute{
+            position: absolute;
+            top: 50px;
+        }
+
+        .pos-fixed{
+            position: fixed;
+            left: 5px;
+            bottom: 10px;
+        }
+
+        .nav{
+            position: relative;
+            border: 1px dotted red;
+            padding: 5px;
+            text-align: center;
+        }
+
+
+        body{
+            height: 5000px;
+        }
+
+        span{
+            padding: 10px;
+            border-radius: 10px;
+            background-color: black;
+            color: white;
+            border: 1px solid black;
+            margin-right: 20px;
+            width: 100px;
+            text-align: center;
+            display: inline-block;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <!--<h3>Relative</h3>
+
+    <div class="nav">
+        <span class="pos-relative">Главная</span>
+        <span>Новость</span>
+        <span>Блог</span>
+    </div>
+
+    <hr/>-->
+
+    <!--<h3>Absolute</h3>
+
+    <div class="nav">
+        <span class="pos-absolute">Главная</span>
+        <span>Новость</span>
+        <span>Блог</span>
+    </div>
+
+    <hr/>-->
+
+    <span class="pos-fixed">CALL</span>
+</body>
+</html>

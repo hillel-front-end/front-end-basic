@@ -1,0 +1,71 @@
+<!--
+    002_float - Один из инструментов для верстки макетов который пришел на смену табличной верстки.
+    Свойство float прижимает элемент к левому или правому краю родителя, а близлежащий текст обтекает элемент с других сторон.
+   
+    СSS Значения: float: [right, left, none(по умолчанию)].
+-->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Опробовать float:left, right</title>
+    <style>
+        .float{
+            float: left ;
+        }
+
+        .block{
+            width: 200px;
+            height: 200px;
+            background-color: yellow;
+            margin:0px 10px;
+        }
+
+        .text{
+            font-size: 25px;
+        }
+
+        .hidden{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="block float text">
+        Float-элемент
+    </div>
+
+    <div class="block float text">
+        Float-элемент
+    </div>
+
+    <div class="block  text" style="float:right;">
+        Float-элемент
+    </div>
+
+    
+
+    <div class="text hidden">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+        Voluptatem nulla quia laborum consectetur at eligendi eum, odio? Eligendi nesciunt 
+        quidem ex debitis aliquid consectetur, non rerum laboriosam quis saepe nostrum.        
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+        Voluptatem nulla quia laborum consectetur at eligendi eum, odio? Eligendi nesciunt 
+        quidem ex debitis aliquid consectetur, non rerum laboriosam quis saepe nostrum.       
+         quidem ex debitis aliquid consectetur, non rerum laboriosam quis saepe nostrum.        
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+        Voluptatem nulla quia laborum consectetur at eligendi eum, odio? Eligendi nesciunt 
+        quidem ex debitis aliquid consectetur, non rerum laboriosam quis saepe nostrum.       
+         quidem ex debitis aliquid consectetur, non rerum laboriosam quis saepe nostrum.        
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+        Voluptatem nulla quia laborum consectetur at eligendi eum, odio? Eligendi nesciunt 
+        quidem ex debitis aliquid consectetur, non rerum laboriosam quis saepe nostrum.        
+        quidem ex debitis aliquid consectetur, non rerum laboriosam quis saepe nostrum.        
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+        Voluptatem nulla quia laborum consectetur at eligendi eum, odio? Eligendi nesciunt 
+        quidem ex debitis aliquid consectetur, non rerum laboriosam quis saepe nostrum.
+    </div>
+    
+</body>
+</html>

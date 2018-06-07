@@ -1,0 +1,45 @@
+<!--
+     Рассположение друг за другом float елементов:
+        * При значении left это происходит слева направо; 
+        * При значении right — справа налево;
+-->
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Float</title>
+        <style>
+            div {
+                font-size: 25px; /* Размер шрифта */
+                padding: 10px 20px; /* Поля вокруг текста */
+                margin-bottom: 10px; /* Отступ снизу */
+            }
+
+            .element-float-left {
+                float: left;
+                background: #69539c; /* Цвет фона */
+                margin-right: 10px; /* Отступ справа */
+            }
+
+            .element-float-right {
+                float: right;
+                background: #37673f; /* Цвет фона */
+                margin-left: 10px; /* Отступ слева */
+            }
+        </style>
+    </head>
+    <body>
+        <div class="element-float-left">1</div>
+        <div class="element-float-left">2</div>
+        <div class="element-float-left">3</div>
+        <div class="element-float-left">4</div>
+        <div class="element-float-left">5</div>
+        <div class="element-float-left">6</div>
+        
+        <div class="element-float-right">1</div>
+        <div class="element-float-right">2</div>
+        <div class="element-float-right">3</div>
+        <div class="element-float-right">4</div>
+        <div class="element-float-right">5</div>
+        <div class="element-float-right">6</div>
+    </body>
+</html>
