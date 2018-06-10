@@ -1,0 +1,96 @@
+<!--
+    Псевдоэлемнт в CSS — это ключевое слово, добавляемое к селектору,
+      которое позволяет стилизовать определённую часть выбранного элемента.
+      Т.е. это особый вид свойств CSS, которые позволяют работать не над самим элементом,
+      а над его отдельной частью.
+
+    Cписок основных псевдоэлемнтов:
+        ::first-line - Стиль первой строки текстового блока
+        ::first-letter - Стиль первой буквы текстового блока 
+
+        ::after - Добавляет содержимое после элемента.
+        ::before - Добавляет содержимое до элемента.
+
+      Псевдоэлементы after и before предназначены для "врезки" в страницу сайта контента 
+    который изначально неуказан в HTML документе.
+    Вставляется содержание перед (:before) или после (:after) какого либо элемента 
+    с помощью свойства content, которое собственно и определяет содержимое для вставки.
+
+    Синтаксис:
+        ceлектор::Псевдоэлемнт{
+            cтили
+        }
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Псевдоклассы</title>
+    <style type="text/css">
+        p{
+            font-size: 20px;
+        }
+
+        .first-line p::first-line {
+            font-size: 30px;
+            color: #f00
+        }
+
+        .first-letter p::first-letter{
+            text-transform: uppercase;
+            font-size: 40px;
+            color: green;
+        }
+
+        .block-with-after{
+            /*background-color: red;*/
+            border: 1px solid black;
+            position: relative;
+        }
+
+        /*.block-with-after::after{
+            content: 'В конце';
+            color: red;
+            text-transform: uppercase;
+            font-size: 30px;
+        }*/
+
+        /*.block-with-after::before{
+            content: 'В начало';
+            color: red;
+            text-transform: uppercase;
+            font-size: 30px;
+        }*/
+    </style>
+</head>
+<body>
+    <!--<div class="first-line">
+        <h3>Псевдоэлемнт ::first-line</h3>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit
+            <br>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit
+        </p>
+    </div>-->
+
+    <!--<hr />
+
+    <div class="first-letter">
+        <h3>Псевдоэлемнт ::first-letter</h3>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur minus optio pariatur sit tenetur ullam voluptatibus.
+            Ad doloremque expedita harum minima repellendus? Dolores impedit molestiae nisi, odio pariatur quas repellendus!
+        </p>
+    </div>-->
+
+    <hr />
+
+    <!--<h3> after и before </h3>
+
+    <div class="block-with-after">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aut cum fugiat libero quaerat? Assumenda atque corporis, est impedit inventore ipsum iste labore maiores molestias nobis nostrum numquam quaerat ut!
+    </div>-->
+</body>
+</html>

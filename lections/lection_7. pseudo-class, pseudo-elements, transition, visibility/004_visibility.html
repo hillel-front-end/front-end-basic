@@ -1,0 +1,81 @@
+<!--
+    Свойство CSS visibility способно сделать любой элемент видимым или невидимым.
+    Значения: hidden, visible.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Visibility</title>
+    <style>
+        .menu{
+            border: 1px solid black;
+            border-radius: 4px;
+            width: 20%;
+        }
+
+        .show{
+            padding:10px;
+            margin-top:20px;
+            display: inline-block;
+            border: 1px solid black;
+            border-radius: 5px;
+            transition: all 1s;
+        }
+
+
+        .animation-property{
+            /*задаем изначальные значения*/
+            visibility: hidden;
+            opacity:0.0;
+            /*transition: opacity 1s, visibility 1s;*/ /*демонстрация того как заанимировать элемент на 2ром этапе*/
+        }
+
+        .show:hover{
+            background-color: black;
+            color: red;
+        }
+
+        .show:hover ~ .animation-property{
+            /*задаем изменяемые значения*/
+            visibility: visible;
+            opacity: 0.9;
+            transition: opacity 1s, visibility 1s;
+        }
+
+        .block{
+            display: inline-block;
+            width: 200px;
+            height: 200px;
+            border:1px solid violet;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <span class="show">show menu</span>
+
+    <br>
+
+    <ul class="menu animation-property">
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+    </ul>
+
+    <hr />
+
+    <h2>Разница между visibility:hidden и display:none</h2> 
+
+    <div class="block"> 1</div>
+
+    <div class="block" style="visibility: hidden;"> 2</div>
+
+    <div class="block" style="display: none;">3</div>
+    
+    <div class="block">4</div>
+
+</body>
+</html>

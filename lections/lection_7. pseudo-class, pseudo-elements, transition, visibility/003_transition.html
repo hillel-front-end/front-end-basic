@@ -1,0 +1,78 @@
+<!--
+    transition - Создание плавных изменений свойств элементов:
+
+    Значения:
+    1. Название свойства transition-property: css cвойство
+    2. Продолжительность перехода transition-duration : секунд
+    3. Функция перехода transition-timing-function:
+        ease	 - Функция по умолчанию, переход начинается медленно, разгоняется быстро и замедляется в конце.
+        linear	 - Переход происходит равномерно на протяжении всего времени, без колебаний в скорости.
+        ease-in	 Переход начинается медленно, а затем плавно ускоряется в конце.
+        ease-out	- Переход начинается быстро и плавно замедляется в конце.
+        ease-in-out	- Переход медленно начинается и медленно заканчивается.
+    4. Задержка перехода transition-delay: s
+
+    Синтаксис краткой записи: {transition: transition-property transition-duration transition-timing-function transition-delay;}
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+
+        .transition-class{
+            transition-property: top;
+            transition-duration: 1s;
+            transition-timing-function: ease;
+            transition-delay: 0.5s;
+
+            /*transition:1s ease-out 0.5s;*/ /* краткая запись*/
+        }
+
+        #bar {
+            position: absolute; /* Абсолютное позиционирование */
+            top: -78px;
+            left: 51px; /* Положение */
+            padding: 10px; /* Поля */
+            margin: 0; /* Отступы */
+            width: 50px; /* Ширина */
+            background: #333; /* Цвет фона */
+            color: #fff; /* Цвет текста */
+            text-align: center; /* Выравнивание по центру */
+        }
+
+        .show-list{
+            position: absolute;
+            left: 7%;
+            top: 0px;
+            padding: 8px;
+            border-radius: 5px;
+            background: black;
+            cursor: pointer;
+            color:white;
+        }
+
+
+        .show-list:hover + #bar { 
+                 /*#bar - целевой элемент на которого навесятся стили*/
+                 /*+ - целевой элемент является братом сразу рядом*/
+                 /*~ - целевой элемент является братом все равно где*/
+                 /* без знаком целевой элемент является ребенком*/                 
+            top: 0px;
+        }
+    </style>
+</head>
+<body>
+    <span class="show-list">SHOW LIST</span>
+
+    <ul id="bar" class="transition-class">
+        <li>1</li><li>2</li>
+        <li>3</li><li>4</li>
+        <li>&darr;</li>
+    </ul>
+
+</body>
+</html>

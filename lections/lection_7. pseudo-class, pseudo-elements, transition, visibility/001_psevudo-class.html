@@ -1,0 +1,93 @@
+<!--
+   Псевдоклассы - это особые свойства, которые позволяют менять стиль элемента в зависимости от 
+   действий пользователя, а так же положения этого элемента (тега) в общем потоке документа, что 
+   позволяет разбавить дизайн страницы некой динамикой и логикой.Классическим примером применения 
+   псевдоклассов является ссылка, которая меняет свой цвет при наведении на неё курсором.
+
+Синтаксис:
+
+ceлектор:псевдокласс{
+    cтили
+}
+    Cписок основных псевдоклассов:
+
+    hover - Стиль элемента на который наведён курсор мыши.
+
+    active - Стиль для ссылки которая становится активной, но переход по ней еще не совершен.
+
+    visited - Стиль для недавно посещённой ссылки.
+
+    first-child - псевдокласс first-child определят стиль первого дочернего элемента находящегося 
+                  в родительском контейнере.
+
+    last-child  - псевдокласс задаёт стилевое оформление последнего элемента своего родителя.
+
+    nth-child - используется для добавления стиля к элементам на основе нумерации в дереве элементов.
+    (https://webref.ru/css/nth-child)
+  
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>  
+    <meta charset="UTF-8">
+    <title>Псевдоклассы</title>
+    <style>
+        .menu-item{
+            padding: 10px;
+            border-radius: 10px; 
+            background-color: black;
+            color: white;
+            border: 1px solid black;
+            margin-right: 20px;
+            width: 100px;
+            display: inline-block;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        .menu-item:hover{
+            background-color: white;
+            color: black;
+        }
+
+        /*.menu-item:active{
+            background: red;
+        }*/
+/*
+        .menu-item:visited{
+            color:yellow;
+        }*/
+
+        /*.menu-item:first-child{
+            text-transform: uppercase;
+            border: 5px solid red;
+        }*/
+
+        /*.menu-item:last-child{
+            text-transform: uppercase;
+            border: 5px solid gold;
+        }*/
+
+        /*.menu-item:nth-child(even){
+            color: pink;
+            border: 5px dashed pink;
+        }*/
+
+        
+
+        
+
+
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <a class="menu-item" href="#">Курсы</a>
+        <a class="menu-item" href="#">Преподаватели</a>
+        <a class="menu-item" href="#">О школе</a>
+        <a class="menu-item" href="#">О школе</a>
+    </div>
+</body>
+</html>

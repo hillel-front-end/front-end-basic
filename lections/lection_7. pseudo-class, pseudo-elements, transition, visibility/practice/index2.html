@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .contact{
+            display: block;
+            width: 10%;
+            padding: 30px;
+            border: 1px solid black;
+            border-radius: 10px;
+            transition: all 1s;
+            position: relative;
+            overflow: hidden;
+            margin:0 auto;
+        }
+
+        .links{
+            overflow: hidden;
+        }
+
+        a{
+            position: relative;
+            display: block;
+        }
+
+        .contact:hover{
+            width:16%;
+        }
+
+        .bot{
+            transition: all 1s;
+            position: absolute;
+            left:100%;
+            top: 10%;
+        }
+
+        .bot2{
+            transition: all 1s;
+            position: absolute;
+            left:0px;
+            top: -20%;
+        }
+
+        .smile{
+            transition: all 1s;
+            position: absolute;
+            left:24%;
+            bottom: -100%;
+            background-image: url("smile.png");
+            background-repeat: no-repeat;
+            width: 34%;
+            height:25%;
+        }
+
+        .contact:hover .bot2{
+            top:10%;
+        }
+
+        .contact:hover .bot{
+            left: 50%;
+        }
+        .contact:hover .smile{
+            bottom: 58%;
+        }
+    </style>
+</head>
+<body>
+    <div class="contact">
+        <img src="user.jpg" style="width: 200px;" alt="user">
+        <div  class="smile"></div>
+        <img src="bot.jpg" class="bot" alt="user">
+        <img src="bot.jpg" class="bot2" alt="user">
+        <h2>User name</h2>
+        <div class="links">
+            <a href="#" class="link">https://www.linkedin.com/in/ternavskiyvaleriy/</a>
+            <a href="#" class="link">https://www.linkedin.com/in/ternavskiyvaleriy/</a>
+        </div>
+    </div>
+</body>
+</html>
