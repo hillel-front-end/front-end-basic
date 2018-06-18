@@ -1,0 +1,26 @@
+<!--
+    Псевдокласс :focus определяет стиль для элемента, получающего фокус. Например, им может быть текстовое поле формы, в которое устанавливается курсор.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Focus</title>
+    <style>
+        input{
+            border-radius: 5px;
+            outline:none;
+            border: 3px solid red;
+        }
+        input:focus{
+            border: 3px solid greenyellow;
+            background: #dde832;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <label for="name">Имя</label>
+    <input type="text" id="name">
+</body>
+</html>
