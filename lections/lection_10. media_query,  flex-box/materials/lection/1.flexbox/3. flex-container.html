@@ -1,0 +1,109 @@
+<!--
+    Flexbox определяет набор CSS свойств для контейнера (flex-контейнер),
+    и его дочерних элементов (flex-блоков).
+
+    Первое, что нужно сделать – это указать контейнеру display:flex - что и создать в нутри 
+    flex-контейнера контекст flexbox, после чего все flex-элементы будут упровляемыми.
+
+    Теперь для flex-контейнера доступны такие css свойства:
+
+    flex-direction - задает направление главной оси. 
+    Значение: row, column
+
+    justify-content - определяет то, как будут выровнены элементы вдоль главной оси.
+    Значение:
+        flex-start(значение по умолчанию): блоки прижаты к началу главной оси
+        flex-end: блоки прижаты к концу главной оси
+        center: блоки располагаются в центре главной оси
+        space-around: все блоки равномерно распределены вдоль главной оси, разделяя все свободное пространство поровну.
+        space-between: первый блок располагается в начале главной оси, последний блок – в конце, все остальные блоки равномерно распределены в оставшемся пространстве.
+
+    align-items - определяет то, как будут выровнены элементы вдоль поперечной оси.
+    Значение:
+        stretch (значение по умолчанию) : блоки растянуты, занимая все доступное место по поперечной оси.
+        flex-start: блоки прижаты к началу поперечной оси
+        flex-end: блоки прижаты к концу поперечной оси
+        center: блоки располагаются в центре поперечной оси
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flexbox</title>
+    <style>
+        body{
+            width: 90%;
+            margin: 0 auto;
+            background-color: #eee;
+        }
+
+        .title i{
+            font-size: 50px;
+            font-weight: bold;
+        }
+        .axis{
+            text-align: center;
+        }
+
+        .flex-container::after{
+            content: 'Flex-контейнер';
+            display: block;
+            position: absolute;
+            left: 15px;
+            top: 5px;
+            font-size: 30px;
+            font-style: italic;
+        }
+
+        .properties{
+            margin-top: 0px;
+            padding: 40px 25px 25px 25px;
+            background-color: white;
+            position: relative;
+            width: 90%;
+            margin: 0 auto;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+        }
+
+        .text{
+            font-size: 25px;
+            margin: 0px;
+            margin-bottom: 5px;
+        }
+
+        .flex-container{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+
+        .flex-element{
+            font-size: 25px;
+            margin-right: 5px;
+            padding: 15px;
+            background-color: red;
+            color: white;
+            margin: 10px 5px;
+        }
+    </style>
+</head>
+<body>
+    <p class='title'>
+        <i>Flexbox</i>
+    </p>
+
+    <div class="axis">
+        <img src="img/main-x-axis.png" alt="x">
+        <img src="img/main-y-axis.png" alt="x">
+    </div>
+        
+
+    <div class="flex-container properties">
+        <div class="flex-element">Flex-элемент - 1</div>
+        <div class="flex-element">Flex-элемент - 2</div>
+        <div class="flex-element">Flex-элемент - 3</div>
+        <div class="flex-element">Flex-элемент - 4</div>
+    </div>
+
+</body>
+</html>
