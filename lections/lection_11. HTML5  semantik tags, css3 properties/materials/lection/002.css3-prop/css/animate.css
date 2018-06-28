@@ -1,0 +1,26 @@
+html,body{
+    height: 100%;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes bouncing{
+  0%  { bottom: 0; box-shadow: 0 0 5px rgba(0,0,0,0.5);}
+  100% { bottom: 50px; box-shadow: 0 50px 50px rgba(0,0,0,0.1); }
+}
+  
+.jump-button { 
+    display: inline-block;
+    position: relative;
+    font-size: 30px;
+    background-color: red;
+    color:white;
+    border-radius: 10px;
+
+
+    animation: bouncing 1s ease 0s infinite alternate; 
+}

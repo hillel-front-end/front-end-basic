@@ -1,0 +1,57 @@
+<!--
+ШАГ-1.Чтобы определить анимацию, просто напишите ключевое слово @keyframes с его "названием",
+ где название любое слово характеризующее что будет делать анимация:
+ 
+    @keyframes around {
+        ключевые кадры {
+            сss свойства: значения;
+        }
+    }
+
+"ключевые кадры"" - это каждый промежуточный шаг в анимации. 
+
+Они определяются с помощью процентов (0-100%) например:
+    0% — первый шаг анимации;
+    50% — шаг на полпути в анимации;
+    100% — последний шаг.
+
+@keyframes around {
+  0%   { left: 0; top: 0; }
+  25%  { left: 240px; top: 0; }
+  50%  { left: 240px; top: 140px; }
+  75%  { left: 0; top: 140px; }
+  100% { left: 0; top: 0; }
+}
+
+ШАГ2. Для нужного элемента определить назначить css свойство animation:
+
+    Как и transition, свойство animation является сокращённым для нескольких других:
+        animation-name: название анимации (то cамое имя из @keyframes);
+        animation-duration: как долго длится анимация (s, ms);
+        animation-timing-function: как вычисляются промежуточные состояния;
+        animation-delay: анимация начинается спустя некоторое время (s, ms);
+        animation-iteration-count: сколько раз должна выполняться анимация 
+            (1,..,n или ключевое слово infinite,  которое будет повторять анимацию бесконечно.);
+        animation-direction: должно движение идти в обратную сторону или нет;
+            normal: начинается с 0%, заканчивается на 100%, начинается с 0% снова.
+            reverse: начинается со 100%, заканчивается на 0%, начинается со 100% снова.
+            alternate: начинается с 0%, идёт до 100%, возвращается на 0%.
+            alternate-reverse: начинается со 100%, идёт до 0%, возвращается на 100%.
+            animation-fill-mode: https://webref.ru/css/animation-fill-mode
+            animation-play-state:Свойство определяет, проигрывать анимацию или поставить её на паузу.
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/animate.css">
+        <title>Animation</title>
+    </head>
+    
+    <body>
+        <span class="jump-button">jump jump</span>
+    </body>
+</html>
