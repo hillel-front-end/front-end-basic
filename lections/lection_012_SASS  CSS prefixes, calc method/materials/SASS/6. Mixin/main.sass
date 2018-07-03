@@ -1,0 +1,30 @@
+*
+  font-size: 30px
+body,html
+  height: 100%
+
+@mixin flex($fd, $jc, $ai)
+  display: flex
+  flex-direction: $fd
+  justify-content: $jc
+  align-items: $ai
+
+@mixin transition($time)
+  transition: all $time ease
+
+.flex-container
+  width: 97%
+  margin: 5px auto
+  height: 600px
+  border: 1px solid black
+  +flex(row, flex-start, center)
+  &:hover .flex-element
+    left: calc(100% - 500px)
+  .flex-element
+    width: 500px
+    height: 500px
+    background-color: purple
+    position: relative
+    left: 0px
+    +transition(2s)
+

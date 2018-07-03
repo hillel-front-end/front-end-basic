@@ -1,0 +1,22 @@
+* {
+  font-size: 30px;
+}
+
+body, html {
+  height: 100%;
+}
+
+body {
+  background: url(../img/sass.svg) no-repeat center bottom;
+}
+
+#main {
+  width: 97%;
+  margin: 0 auto;
+}
+#main p, #main div {
+  font-size: 1em;
+}
+#main p i, #main div i {
+  font-weight: bold;
+}

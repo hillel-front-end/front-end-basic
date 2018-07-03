@@ -1,0 +1,29 @@
+* {
+  font-size: 30px;
+}
+
+body, html {
+  height: 100%;
+}
+
+.flex-container {
+  width: 97%;
+  margin: 5px auto;
+  height: 600px;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.flex-container:hover .flex-element {
+  left: calc(100% - 500px);
+}
+.flex-container .flex-element {
+  width: 500px;
+  height: 500px;
+  background-color: purple;
+  position: relative;
+  left: 0px;
+  transition: all 2s ease;
+}
